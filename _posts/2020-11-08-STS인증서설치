@@ -1,0 +1,39 @@
+백엔드를 만들고 싶어서, STS4(Spring Tool Suite4) 를 다운받음.
+New > New Spring Stater Project 선택시, 인증서오류발생
+다음과 같은 순서로 인증서를 설치하여 해결함.
+
+1. InstallCert.java 다운로드
+```
+https://github.com/escline/InstallCert/blob/master/InstallCert.java
+```
+
+2. javac 컴파일
+```
+javac InstallCert.java
+```
+
+3. java 실행
+```
+java -cp . InstallCert start.spring.io
+```
+
+4. 인증서 추출 ( keytool 명령어는 java/bin 에 위치함 )
+```
+keytool -exportcert -keystore jssecacerts -storepass changeit -file output.cert -alias start.spring.io-1
+```
+
+5. 인증서 추가
+```
+keytool -importcert -keystore D:\util_java\jdk-15\lib\security\cacerts -storepass changeit -file output.cert -alias start.spring.io-1
+```
+
+6. 인증서 확인 
+```
+keytool -list -keystore D:\util_java\jdk-15\lib\security\cacerts -storepass changeit -alias start.spring.io-1
+```
+
+7. 이클립스 ini 인증서 관련 2줄 추가 ( STS 는 SpringToolSuite4.ini 여기에 추가 )
+```
+-Djavax.net.ssl.trustStore=D:\util_java\jdk-15\lib\security\cacerts
+-Djava.net.ssl.trustStorePassword=changeit
+```
