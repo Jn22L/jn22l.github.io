@@ -1,5 +1,5 @@
 ---
-title: "springboot mybatis mysql 최소한의 설정으로 끝내기"
+title: "스프링부트 mybatis mysql 최소한의 설정으로 끝내기"
 date: 2020-11-10 17:47:00 -0600
 categories: git github
 ---
@@ -14,7 +14,7 @@ categories: git github
 
 ## 스프링 기본셋팅 후 zip 파일 다운받기
 * 여기서 : <https://start.spring.io/>
-* 내가선택한것 : Maven Project / Spring Boot 2.3.5 / OpenJdk 11  
+* 내가선택한것 : Maven Project/SpringBoot 2.3.5/OpenJdk 11  
 *               Dependencies = Spring Web 만 선택
 * 다운받기 클릭하면 -> zip 파일 생성해준다.
 
@@ -142,8 +142,8 @@ public interface BoardMapper {
 }
 ``` 
 
-## 7. 쿼리 xml 만들기 
-위치 : src/main/resources 밑에 mappers 폴더생성 : boardMapper.xml 
+## 7. 쿼리 xml 만들기 ( boardMapper.xml  )
+위치 : src/main/resources 밑에 mappers 폴더생성후 작성
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
