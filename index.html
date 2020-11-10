@@ -10,7 +10,6 @@ author_profile: true
   </head>
   <body>
     
-  <ul class="posts-list">
 
     {% assign category = page.category | default: page.title %}
     {% for post in site.categories[category] %}
@@ -24,7 +23,6 @@ author_profile: true
       </li>
     {% endfor %}
 
-  </ul>
     
   </body>
 </html>
