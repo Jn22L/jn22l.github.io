@@ -8,7 +8,7 @@ springboot mybatis mysql 최소설정으로 끝내기
 ## 다운로드 및 설치 
 1. STS4 다운 및 설치 : <https://spring.io/tools>
 2. OpenJDK 다운 및 설치 : <https://jdk.java.net/>
-3. MariaDb 다운 및 설치 : <https://downloads.mariadb.org/>
+3. MariaDB 다운 및 설치 : <https://downloads.mariadb.org/>
    - 테이블생성 해놓기 : mydb.mytable 컬럼은 id, name
 
 ## 스프링 기본셋팅 후 zip 파일 다운받기
