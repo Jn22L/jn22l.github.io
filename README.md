@@ -1,1 +1,1 @@
-# jn22l.github.io
+Simple is best
