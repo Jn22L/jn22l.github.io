@@ -9,19 +9,9 @@ author_profile: true
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <h1>Hello World! 헬로우 ~ </h1>
+    <h1>Hello World! 헬로우 ~  {% page.category %} </h1>
     
-    {% assign category = page.category | default: page.title %}
-    {% for post in site.categories[category] %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-          </a>
-          <small>{{ post.date | date_to_string }}</small>
-        </h3>
-      </li>
-    {% endfor %}
+
 
     
   </body>
