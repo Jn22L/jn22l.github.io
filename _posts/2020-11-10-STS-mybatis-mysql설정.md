@@ -4,7 +4,7 @@ date: 2020-11-10 17:47:00 -0600
 categories: git github
 ---
 * springboot mybatis mysql 최소한의 설정으로 끝내기
-* 이젠 설정지옥에서 벗어나자 !
+* 이젠 설정지옥에서 벗어날때 아닌감?
 
 ## 다운로드 및 설치 
 1. STS4 다운 및 설치 : <https://spring.io/tools>
@@ -16,7 +16,7 @@ categories: git github
 * 여기서 : <https://start.spring.io/>
 * 내가선택한것 : Maven Project/SpringBoot 2.3.5/OpenJdk 11  
 *               Dependencies = Spring Web 만 선택
-* 다운받기 클릭하면 -> zip 파일 생성해준다.
+* GENERATE 클릭하면 -> zip 파일 생성해준다.
 
 ## 다운받은 zip 파일을 적당한 workspace 에 압축풀고 STS4 실행
 
