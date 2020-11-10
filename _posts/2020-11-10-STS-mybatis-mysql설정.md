@@ -87,6 +87,8 @@ public class MyboardApplication {
 package myboard.model;
 public class BoardVO {
 	private int id;
+	private String name;
+	
 	public int getId() {
 		return id;
 	}
@@ -99,7 +101,6 @@ public class BoardVO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	private String name;
 }
 ``` 
 
@@ -112,7 +113,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
- 
+
 import myboard.model.BoardVO;
 import myboard.mapper.BoardMapper;
  
