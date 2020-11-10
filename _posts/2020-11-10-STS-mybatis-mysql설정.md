@@ -1,5 +1,5 @@
 ---
-title: "스프링부트 mybatis mysql 최소한의 설정으로 끝내기"
+title: "springboot mybatis mysql 최소한의 설정으로 끝내기"
 date: 2020-11-10 17:47:00 -0600
 categories: git github
 ---
