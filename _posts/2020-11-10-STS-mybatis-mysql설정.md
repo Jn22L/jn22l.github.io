@@ -1,10 +1,9 @@
 ---
-title: "springboot mybatis mysql 최소한의 설정으로 끝내기"
+title: "springboot mybatis mysql 최소설정으로 끝내기"
 date: 2020-11-10 17:47:00 -0600
-categories: git github
+categories: springboot mybatis mysql mariadb 
 ---
-* springboot mybatis mysql 최소한의 설정으로 끝내기
-* 이젠 설정지옥에서 벗어날때 아닌감?
+springboot mybatis mysql 최소설정으로 끝내기
 
 ## 다운로드 및 설치 
 1. STS4 다운 및 설치 : <https://spring.io/tools>
@@ -27,15 +26,16 @@ categories: git github
 ```
 pom.xml
 application.properties # DB설정
+
 MyBoardApplication.java
-model/BoardVO.java
+BoardVO.java
 BoardController.java
 BoardMapper.java
 boardMapper.xml
 ```
 
 ## 1. pom.xml dependency 추가
-```XML
+```xml
 <dependency>
   <groupId>org.mybatis.spring.boot</groupId>
   <artifactId>mybatis-spring-boot-starter</artifactId>
