@@ -95,8 +95,8 @@ analytics:
 author:
   name             : "Undefined"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Everything"
-  location         : "I Am Everywhere"
+  bio              : "Simple is best!"
+  location         : "I am everywhere"
   email            :
   links:
     - label: "Email"
