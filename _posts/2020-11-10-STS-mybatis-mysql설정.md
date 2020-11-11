@@ -1,7 +1,8 @@
 ---
 title: "springboot mybatis mysql 최소설정으로 끝내기"
 date: 2020-11-10 17:47:00 -0600
-categories: springboot mybatis mysql mariadb 
+categories: springboot
+tags: springboot mybatis mariadb maven
 ---
 springboot mybatis mysql 최소설정으로 끝내기
 
