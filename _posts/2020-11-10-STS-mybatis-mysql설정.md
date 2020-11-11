@@ -1,8 +1,7 @@
 ---
 title: "springboot mybatis mysql 최소설정으로 끝내기"
 date: 2020-11-10 17:47:00 -0600
-categories: springboot
-tags: springboot mybatis mariadb maven
+categories: springboot mybatis mysql mariadb 
 ---
 springboot mybatis mysql 최소설정으로 끝내기
 
@@ -25,14 +24,14 @@ springboot mybatis mysql 최소설정으로 끝내기
 ## 설정파일 및 java 목록
 최대한 심플하게 하기위하여, Service Layer 는 생략!
 ```
-pom.xml                 // 의존성 추가
-application.properties  // DB설정 추가
+pom.xml
+application.properties # DB설정
 
-MyBoardApplication.java // @MapperScan 추가
-BoardVO.java            // VO
-BoardController.java    // Controller
-BoardMapper.java        // Mapper
-boardMapper.xml         // 쿼리
+MyBoardApplication.java
+BoardVO.java
+BoardController.java
+BoardMapper.java
+boardMapper.xml
 ```
 
 ## 1. pom.xml dependency 추가
