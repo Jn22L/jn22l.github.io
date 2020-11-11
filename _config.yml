@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "undefined"
+  name             : "Undefined"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I Am Everywhere"
+  bio              : "Everything"
   location         : "I Am Everywhere"
   email            :
   links:
