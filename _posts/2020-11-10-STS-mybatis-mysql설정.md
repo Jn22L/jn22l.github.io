@@ -239,19 +239,17 @@ import myboard.service.BoardService;
 @Controller // ResctController 로 하면 jsp 가 안된다. why ?
 public class HelloController {
      
-	@Autowired
+    @Autowired
     private BoardService boardService;
 	
-	@GetMapping
-	@RequestMapping("/hello")
+    @GetMapping
+    @RequestMapping("/hello")
     public ModelAndView hello() throws Exception{
-		
-   	    List<BoardVO> board = boardService.selectAll();
+        List<BoardVO> board = boardService.selectAll();
         ModelAndView mav = new ModelAndView("hello");
         mav.addObject("list", board); 
         return mav;       
     }
- 
 }
 ```
 * 확인 : http://localhost:8080/hello 
