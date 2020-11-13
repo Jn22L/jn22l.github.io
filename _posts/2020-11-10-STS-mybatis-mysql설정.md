@@ -238,7 +238,7 @@ public class HelloController {
 ```
 * 확인 : http://localhost:8080/hello 
 * 폴더+jsp 까지 잘했는데, 안뜬다면
-    -> jsp 폴더경로 확인해보기
-    -> 스프링부트 껏다가 다시 켜기 ... ?!
+  * jsp 폴더경로 확인해보기
+  * 스프링부트 껏다가 다시 켜기 ... ?!
 * 소스 : <https://github.com/Jn22L/springboot-mysql-maven>
 
