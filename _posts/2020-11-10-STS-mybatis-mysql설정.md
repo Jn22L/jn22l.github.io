@@ -165,3 +165,77 @@ public interface BoardMapper {
 
 ## 휴 ~ 이게 되네 ?
 
+## 잠시 휴식후에 JSP 까지 붙여보고 싶은 마음이 생긴다면
+
+## 1. pom.xml JSP dependency 추가
+```xml
+<!-- JSTL for JSP -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+</dependency>
+
+<!-- Need this to compile JSP -->
+<dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-jasper</artifactId>
+    <scope>provided</scope>
+</dependency>
+
+<!-- spring.devtools 자동재시작 의존성 추가 -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+</dependency>
+
+```
+## 2. application.properties JSP설정 추가
+
+```
+# jsp 설정 2줄
+spring.mvc.view.prefix: /WEB-INF/jsp/
+spring.mvc.view.suffix: .jsp
+
+# 소스수정시 was 자동재시작 설정
+spring.devtools.livereload.enabled=true
+```
+## 3. jsp폴더 추가 후 hello.jsp 추가
+```
+src/main/webapp/WEB-INF/jsp/hello.jsp // 소스 full path
+```
+## 4. jsp를 리턴하는 controller java 추가
+```jsp
+package myboard.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import myboard.model.BoardVO;
+import myboard.service.BoardService;
+ 
+@Controller 
+public class HelloController {
+     
+	@Autowired
+    private BoardService boardService;
+	
+	@GetMapping
+	@RequestMapping("/hello")
+    public ModelAndView hello() throws Exception{
+		
+   	    List<BoardVO> board = boardService.selectAll();
+        ModelAndView mav = new ModelAndView("hello");
+        mav.addObject("list", board); 
+        return mav;       
+    }
+ 
+}
+```
+* 확인 : http://localhost:8080/hello 
+* 소스 : <https://github.com/Jn22L/springboot-mysql-maven>
+
