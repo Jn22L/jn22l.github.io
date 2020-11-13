@@ -1,7 +1,6 @@
 ---
 title: "springboot mybatis mysql 최소설정으로 끝내기"
 date: 2020-11-10 17:47:00 -0600
-categories: springboot mybatis mysql mariadb 
 tags: springboot mybatis mysql mariadb 
 ---
 springboot mybatis mysql 최소설정으로 끝내기
@@ -50,7 +49,7 @@ boardMapper.xml
 ```
 
 ## 2. application.properties DB설정 추가
-``` 
+```properties
 spring.datasource.driver-class-name= com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost:3306/mydb?serverTimezone=UTC&characterEncoding=UTF-8
 spring.datasource.username=root
