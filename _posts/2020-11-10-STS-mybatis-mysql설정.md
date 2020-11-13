@@ -191,7 +191,7 @@ public interface BoardMapper {
 ```
 ## 2. application.properties JSP설정 추가
 
-```
+```properties
 # jsp 설정 2줄
 spring.mvc.view.prefix: /WEB-INF/jsp/
 spring.mvc.view.suffix: .jsp
