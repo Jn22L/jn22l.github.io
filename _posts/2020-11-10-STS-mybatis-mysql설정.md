@@ -218,7 +218,7 @@ import org.springframework.web.servlet.ModelAndView;
 import myboard.model.BoardVO;
 import myboard.service.BoardService;
  
-@Controller 
+@Controller // ResctController 로 하면 jsp 가 안된다. 이유 아는 분 좀 ?
 public class HelloController {
      
 	@Autowired
@@ -237,5 +237,8 @@ public class HelloController {
 }
 ```
 * 확인 : http://localhost:8080/hello 
+* 폴더+jsp 까지 잘했는데, 안뜬다면
+    -> jsp 폴더경로 확인해보기
+    -> 스프링부트 껏다가 다시 켜기 ... ?!
 * 소스 : <https://github.com/Jn22L/springboot-mysql-maven>
 
