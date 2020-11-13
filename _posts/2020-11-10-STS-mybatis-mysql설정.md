@@ -201,10 +201,28 @@ spring.devtools.livereload.enabled=true
 ```
 ## 3. jsp폴더 추가 후 hello.jsp 추가
 ```
-src/main/webapp/WEB-INF/jsp/hello.jsp // 소스 full path
+// 소스경로 : src/main/webapp/WEB-INF/jsp/hello.jsp 
 ```
-## 4. jsp를 리턴하는 controller java 추가
 ```jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%> 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%> <!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>View Test Page</title>
+  </head>
+  <body>
+    <h2>Hello! </h2>
+    <div>JSP List Test</div>
+    <c:forEach var="item" items="${list}" varStatus="idx">
+      ${item.id}, ${item.name}  <br />
+    </c:forEach>
+  </body>
+</html>
+```
+
+## 4. jsp를 리턴하는 controller java 추가
+```java
 package myboard.controller;
 
 import java.util.List;
@@ -218,7 +236,7 @@ import org.springframework.web.servlet.ModelAndView;
 import myboard.model.BoardVO;
 import myboard.service.BoardService;
  
-@Controller // ResctController 로 하면 jsp 가 안된다. 이유 아는 분 좀 ?
+@Controller // ResctController 로 하면 jsp 가 안된다. why ?
 public class HelloController {
      
 	@Autowired
