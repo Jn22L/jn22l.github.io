@@ -6,7 +6,7 @@ tags: springboot mysql mariadb gradle
 springboot mybatis mysql gradle 설정
 
 ## 1.build.gradle  
-```xml
+```properties
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3'
