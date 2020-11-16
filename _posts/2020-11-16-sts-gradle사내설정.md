@@ -3,18 +3,18 @@ title: "springboot gradle 내부망에서 셋팅"
 date: 2020-11-16 11:44:00 -0600
 tags: springboot mysql mariadb gradle 
 ---
-집에서 잘되던 gradle 사무실로 가져오니 에러발생
-수정할 부분 정리
+* 집에서 잘되던 gradle 사무실에서 에러발생 해결하기
+* 에러 : Could not run phased build action using Gradle distribution 'file: ...'
 
 ## 1.settings.gradle
 ```properties
 rootProject.name = 'springboot-mysql-gradle' # 프로젝트명 맞춰주기
-pluginManagement.repositories {
+pluginManagement.repositories { # 내부레파지토리 추가
     maven { url "http://nexus.내부망.com:8081/repository/gradle-m2/" }
 }
 ```
 
-## 2. build.gradle
+## 2. build.gradle 레파지토리 내부로 변경
 ```properties
 repositories {
     maven { url "http://nexus.내부망.com:8081/repository/gradle-m2/" }
