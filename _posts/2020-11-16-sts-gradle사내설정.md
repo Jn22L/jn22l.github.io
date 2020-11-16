@@ -1,7 +1,7 @@
 ---
 title: "springboot gradle 내부망에서 셋팅"
 date: 2020-11-16 11:44:00 -0600
-tags: springboot mysql mariadb gradle 
+tags: springboot gradle 내부망
 ---
 * 집에서 잘되던 gradle 사무실에서 에러발생 해결하기
 * 에러 : Could not run phased build action using Gradle distribution 'file: ...'
