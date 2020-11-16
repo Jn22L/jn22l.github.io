@@ -5,6 +5,8 @@ tags: springboot gradle 내부망
 ---
 * 집에서 잘되던 gradle 사무실에서 에러발생 해결하기
 * 에러 : Could not run phased build action using Gradle distribution 'file: ...'
+* 셋팅을 모두 수정후에 STS실행 -> import > Gradle > Existing Gradle Project
+  * import 부터 하고 셋팅 수정하니, 에러가 꼬여서 잘 안된다.
 
 ## 1.settings.gradle
 ```properties
