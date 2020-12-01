@@ -5,7 +5,7 @@ tags: react axios
 ---
 * react axios 테스트
  
-```react
+```jsx
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
