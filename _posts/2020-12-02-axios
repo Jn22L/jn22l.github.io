@@ -1,0 +1,37 @@
+---
+title: "react axios 테스트"
+date: 2020-12-12 08:45:00 -0600
+tags: react axios 
+---
+* react axios 테스트
+ 
+```react
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+function App() {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`https://jsonplaceholder.typicode.com/comments`, {
+        params: {
+          postId: "3",
+        },
+      })
+      .then((res) => {
+        setItems(res.data);
+      });
+  }, []);
+
+  return (
+    <div>
+      {items.map((v, i) => {
+        return <li key={i}>{v.name}</li>;
+      })}
+    </div>
+  );
+}
+
+export default App;
+```
